@@ -201,57 +201,68 @@ const Landing = () => {
 
             {/* How It Works Section */}
             <section className="how-it-works">
-                <motion.div
-                    className="section-header"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                <motion.img
+                    src="/rena_san_1.png"
+                    alt="Rena San Guide"
+                    className="how-it-works-mascot"
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                >
-                    <h2>🔮 How It Works</h2>
-                    <p>Three layers of protection in one seamless experience</p>
-                </motion.div>
-
-                <div className="steps">
+                    transition={{ duration: 0.6 }}
+                />
+                <div className="how-it-works-content">
                     <motion.div
-                        className="step"
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                        className="section-header"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <div className="step-number">1</div>
-                        <div className="step-content">
-                            <h3>Anime Knowledge Challenge</h3>
-                            <p>Users answer questions about anime symbols, characters, and cultural references that require human intuition.</p>
-                        </div>
+                        <h2>🔮 How It Works</h2>
+                        <p>Three layers of protection in one seamless experience</p>
                     </motion.div>
 
-                    <motion.div
-                        className="step"
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.1 }}
-                    >
-                        <div className="step-number">2</div>
-                        <div className="step-content">
-                            <h3>Behavior Analysis</h3>
-                            <p>AI tracks mouse movements, response timing, and interaction patterns to detect bot-like behavior.</p>
-                        </div>
-                    </motion.div>
+                    <div className="steps">
+                        <motion.div
+                            className="step"
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="step-number">1</div>
+                            <div className="step-content">
+                                <h3>Anime Knowledge Challenge</h3>
+                                <p>Users answer questions about anime symbols, characters, and cultural references that require human intuition.</p>
+                            </div>
+                        </motion.div>
 
-                    <motion.div
-                        className="step"
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        <div className="step-number">3</div>
-                        <div className="step-content">
-                            <h3>Combined Verification</h3>
-                            <p>Both signals are weighted to make a final decision, allowing humans through while blocking automated attacks.</p>
-                        </div>
-                    </motion.div>
+                        <motion.div
+                            className="step"
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                        >
+                            <div className="step-number">2</div>
+                            <div className="step-content">
+                                <h3>Behavior Analysis</h3>
+                                <p>AI tracks mouse movements, response timing, and interaction patterns to detect bot-like behavior.</p>
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            className="step"
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                        >
+                            <div className="step-number">3</div>
+                            <div className="step-content">
+                                <h3>Combined Verification</h3>
+                                <p>Both signals are weighted to make a final decision, allowing humans through while blocking automated attacks.</p>
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
             </section>
 
@@ -274,6 +285,15 @@ const Landing = () => {
                         <span>🌀</span> Launch Demo
                     </motion.button>
                 </motion.div>
+                <motion.img
+                    src="/rena_san_2.png"
+                    alt="Rena San Mascot"
+                    className="cta-mascot"
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                />
             </section>
 
             {/* Footer */}
